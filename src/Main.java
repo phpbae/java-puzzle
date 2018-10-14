@@ -4,7 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         /**
          * 홀수확인 : 2로 나눈 나머지가 1이면, 홀수
          * 나머지 연산(%) -> 나머지 연산의 결과는 왼쪽 피연산자의 부호와 같다.(-3%2 = -1, 3%2=1)
