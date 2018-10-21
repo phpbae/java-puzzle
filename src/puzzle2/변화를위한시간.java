@@ -14,6 +14,11 @@ public class 변화를위한시간 {
 		double a = 2.00;
 		double b = 1.10;
 		System.out.println(a - b); // 0.90 ?
+
+		// Java 에서 int, long 은 정수형이기 때문에, 소수점을 포함할 수 없다.
+		int aa = (int) 2.1;
+		int bb = (int) 1.0;
+		System.out.println(aa - bb); // 1.1 ?
 	}
 	
 	/**
@@ -48,10 +53,6 @@ public class 변화를위한시간 {
 		System.out.println("decimalDouble : " + decimalDouble);
 		System.out.println("decimalString : " + decimalString);
 		System.out.println("2.00 - 1.10 = " + new BigDecimal("2.00").subtract(new BigDecimal("1.10")));
-		
-		
-		
-		
 	}
 	
 }

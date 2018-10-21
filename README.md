@@ -39,8 +39,31 @@ ex 1)
 110
 101
 100 -> 2^2 = 4
+```
+
+#### 2. 변화를 위한 시간
+
+- 자바는 float / double 자료형으로 정확한 연산을 수행할 수 없음.
+- 자바는 이진 부동소수점 연산을 사용. -> 빠르지만, 미세한 오차가 있음
+- 오차가 없는 십진 부동소수점 연산도 존재하지만, 자바 기본 자료형 연산에서 이를 지원X
+- 정확한 결과가 필요하다면, float / double 자료형을 사용하지 말고 int, long, BigDecimal 자료형을 사용. 
+```
+
+double a = 2.00;
+double b = 1.10;
+System.out.println(a - b); // 0.90 ?
+결과 : 0.8999999999999999 
+이진 부동소수점 연산을 사용하기 떄문에, 미세한 오차가 발생.  따라서, 금융 계산에서 사용하면 큰일.
 
 
+//주의 : 생성자에 매개변수로 입력한 값을 그대로 표현
+BigDecimal decimalDouble = new BigDecimal(b); // 1.10 = 1.100000000000000088817841970012523233890533447265625
+BigDecimal decimalString = new BigDecimal("2.00"); // String 생성자를 이용하자.
 
+decimalDouble : 1.100000000000000088817841970012523233890533447265625
+decimalString : 2.00
 
+System.out.println("2.00 - 1.10 = " + new BigDecimal("2.00").subtract(new BigDecimal("1.10")));
+
+결과 : 2.00 - 1.10 = 0.90
 ```
