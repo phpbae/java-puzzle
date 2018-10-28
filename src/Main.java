@@ -1,5 +1,6 @@
 import puzzle1.홀수확인;
 import puzzle2.변화를위한시간;
+import puzzle3.Logn자료형나눗셈;
 
 public class Main {
 
@@ -37,6 +38,18 @@ public class Main {
 		변화를위한시간.printMoney2(); //0.90 printf() 이용
 		변화를위한시간.printMoney3(); //int / long 이용해서 처리
 		변화를위한시간.printMoney4(); //BigDecimal 클래스 이용
+
+
+		/**
+		 * Long 자료형 나눗셈
+		 * Java 에서는 타깃 타이핑(Target Typing)을 지원하지 않는다.
+		 * long a = int * int -> 최종 결과물이 long 자료형이라도 int 자료형 값을 long으로 먼저 변환해서 처리 하지않음.(연산을 한 뒤, long 자료형으로 변환)
+		 * 큰 숫자값을 다룰 때는 항상 오버플로(overflow)를 주의! (표현범위를 넘어 의도와는 다른값이 저장되는 현상)
+		 */
+
+		// 연산이 int 자료형들 끼리 이루어 지면서, 오버플로가 발생을 해버림.
+		Logn자료형나눗셈.longPrint(); // 5
+		Logn자료형나눗셈.longPrint2(); // 1000
 
 	}
 }
