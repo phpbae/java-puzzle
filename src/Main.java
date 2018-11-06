@@ -1,6 +1,8 @@
 import puzzle1.홀수확인;
 import puzzle2.변화를위한시간;
 import puzzle3.Logn자료형나눗셈;
+import puzzle4.초등학교;
+import puzzle5.십육진수의즐거움;
 
 public class Main {
 
@@ -50,6 +52,26 @@ public class Main {
 		// 연산이 int 자료형들 끼리 이루어 지면서, 오버플로가 발생을 해버림.
 		Logn자료형나눗셈.longPrint(); // 5
 		Logn자료형나눗셈.longPrint2(); // 1000
+
+
+		/**
+		 * 초등학교 수준의 문제
+		 * long 자료형의 숫자를 나타낼 때는 절대 소문자 l 을 사용하지 말고 대문자 L을 사용!!
+		 */
+		초등학교.print();
+
+		/**
+		 * 16진수의 즐거움
+		 * 10진수 음수는 뺄셈 기호가 앞에 있는지 확인하면 알 수 있음.
+		 * 16진수 8진수 2진수 값은 상위 비트가 정의되면 음수로 인식(최상위부호비트 = MSB)
+		 * MSB 0 = 양수 MSB 1 = 음수
+		 * 혼합 자료형 연산 : long + int 이기 때문에, int -> long 으로 확장변환이 일어남 이때, 부호확장도 함께 일어남.
+		 * 0x100000000L + 0xffffffffcafebabe
+		 * 다양한 진법의 숫자를 함께 연산하지 말아야 한다.
+		 */
+
+		십육진수의즐거움.print();
+		십육진수의즐거움.print2();
 
 	}
 }
