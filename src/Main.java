@@ -3,6 +3,7 @@ import puzzle2.변화를위한시간;
 import puzzle3.Logn자료형나눗셈;
 import puzzle4.초등학교;
 import puzzle5.십육진수의즐거움;
+import puzzle6.다중자료형변환;
 
 public class Main {
 
@@ -72,6 +73,19 @@ public class Main {
 
 		십육진수의즐거움.print();
 		십육진수의즐거움.print2();
+
+
+		/**
+		 * 다중 자료형 변환
+		 * long 8byte / int 4byte / short 2byte / byte 1byte
+		 * char 2byte -> unsigned(부호없는)
+		 * 부호가 있는 자료형 -> 부호확장 / 부호가 없는 자료형이면, 0의 확장이 일어남.
+		 * 양수값의 부호 확장에는 상위자리를 0으로 채우면 되고, 음수값의 부호 확장에는 상위 자리를 1로 채우면 끝!!
+		 * -1 : 32비트 = 11111111111111111111111111111111  -> 이걸 long 64비트로 확장하면? = 1111111111111111111111111111111111111111111111111111111111111111
+		 */
+
+		다중자료형변환.print(); //65535
+		다중자료형변환.print2(); //-1
 
 	}
 }
