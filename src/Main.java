@@ -4,6 +4,7 @@ import puzzle3.Logn자료형나눗셈;
 import puzzle4.초등학교;
 import puzzle5.십육진수의즐거움;
 import puzzle6.다중자료형변환;
+import puzzle7.변수교환;
 
 public class Main {
 
@@ -87,6 +88,12 @@ public class Main {
 
 		다중자료형변환.print(); //65535
 		다중자료형변환.print2(); //-1
+
+		/**
+		 * 변수 교환
+		 */
+
+		변수교환.print();
 
 	}
 }
