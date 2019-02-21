@@ -5,6 +5,8 @@ import puzzle4.초등학교;
 import puzzle5.십육진수의즐거움;
 import puzzle6.다중자료형변환;
 import puzzle7.변수교환;
+import puzzle8.DosEquis;
+import puzzle9.같으면서다른것;
 
 public class Main {
 
@@ -98,6 +100,20 @@ public class Main {
 		 */
 
 		변수교환.print();
+
+
+		/**
+		 * Dos Equis
+		 * 조건 연산자
+		 */
+
+		DosEquis.print();
+
+		/**
+		 * 같은 것 같으면서도 다른 것
+		 */
+
+		같으면서다른것.print();
 
 	}
 }

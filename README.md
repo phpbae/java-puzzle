@@ -1,4 +1,4 @@
-# java-puzzle
+# java-puzzle8
 자바 퍼즐러 코드 작성
 
 
@@ -129,8 +129,7 @@ System.out.println("2.00 - 1.10 = " + new BigDecimal("2.00").subtract(new BigDec
 - 혼합 자료형 연산 : long + int 이기 때문에, int -> long 으로 확장변환(묵시적 형변환)이 일어남 이때, 부호확장도 함께 일어남. (0x100000000L + 0xffffffffcafebabe)
 - toHexString() 는 부호없는 결과를 생성 / parseInt()가 부호있는 int를 결과로 생성.
 - API 문서를 보면, decodable string 이라는 용어가 있는데, 부호를 따로 표기하거나 생략하라고 되어있다.
-- DecodableString: 
-  Signopt DecimalNumeral / Signopt 0x HexDigits / Signopt 0X HexDigits / Signopt # HexDigits / Signopt 0 OctalDigits
+- DecodableString: Signopt DecimalNumeral / Signopt 0x HexDigits / Signopt 0X HexDigits / Signopt # HexDigits / Signopt 0 OctalDigits
 - Sign: - / +
 - 다양한 진법의 숫자를 함께 연산하지 말아야 한다.
 
@@ -177,3 +176,9 @@ System.out.println("2.00 - 1.10 = " + new BigDecimal("2.00").subtract(new BigDec
             System.out.println("다중자료형변환 : " + (long) (int) (byte) -1);
         }
 ```
+
+
+#### 7. 변수교환
+
+
+#### 8. Dos Equis

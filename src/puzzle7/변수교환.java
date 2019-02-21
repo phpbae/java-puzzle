@@ -3,7 +3,7 @@ package puzzle7;
 public class 변수교환 {
 
     // 배타적 논리합 (XOR)
-    // 1이 나오는 경우, 두 비트의 값이 다를 경우. 같으면 0
+    // 1 이 나오는 경우, 두 비트의 값이 다를 경우. 같으면 0
     // 1100 ^ 1000 =  0100
     static public void print() {
         int x = 1984;

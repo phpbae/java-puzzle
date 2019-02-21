@@ -40,8 +40,8 @@ public class 십육진수의즐거움 {
             // Integer.decode() 내부를 보면, result = Integer.valueOf(nm.substring(index), radix); valueOf 메서드를 이용하여 처리한다. -> valueOf를 따라가면, Integer.valueOf(parseInt(s,radix)) 자 이렇게 parseInt 로 처리.
             // limit == -Integer.MAX_VALUE == -2147483647 // multmin == -134217727 (int multmin = limit / radix;  여기서는 radix = 16)
             // parseInt()가 부호있는 int를 취하고 toHexString이 부호없는 결과를 생성
-            System.out.println(Integer.decode("0x" + Integer.toHexString(-889275714))); //error 발생
-            System.out.println("-889275714 hexString -> decode = " + Integer.decode("-" + "0x" + Integer.toHexString(-889275714))); //error
+            // System.out.println(Integer.decode("0x" + Integer.toHexString(-889275714))); //error 발생
+            // System.out.println("-889275714 hexString -> decode = " + Integer.decode("-" + "0x" + Integer.toHexString(-889275714))); //error
 
         } catch (NumberFormatException e){
             e.printStackTrace();
